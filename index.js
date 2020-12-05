@@ -12,16 +12,16 @@
 
     async function ls(path, current = '') {
         const target = fs.createWriteStream(outFile, { encoding: 'utf-8' })
+        console.info("I started combining operation")
         
         glob(workspaceFolder + "/**/*.sk", function (er, files) {
-          console.log(files)
-
           files.sort((a, b) => a.split('/').length - b.split('/').length).forEach(file => {
             const data = fs.readFileSync(file, { encoding: 'utf-8' })
-            target.write(Buffer.from(`### ${file} ###\n` + data + '\n\n'))
+            target.write(Buffer.from(`# File path: ${file}\n` + data + '\n\n'))
           })
 
           target.close()
+          console.info("I combined " + files.length + " files! Let's Skript!")
         })
     }
 

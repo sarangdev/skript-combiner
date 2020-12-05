@@ -1,4 +1,4 @@
 # skript-combiner
 Skript-combiner will combine all your .sk into one!
-# Using
- npm run start **[workspacePath]**
+# Start
+ Run: npm run start **[workspacePath]**

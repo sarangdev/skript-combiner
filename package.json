@@ -1,0 +1,27 @@
+{
+  "name": "skript-combiner",
+  "version": "1.0.0",
+  "description": "Skript-combiner will combine all your .sk into one!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarangdev/skript-combiner.git"
+  },
+  "author": "sarangdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarangdev/skript-combiner/issues"
+  },
+  "homepage": "https://github.com/sarangdev/skript-combiner#readme"
+}
